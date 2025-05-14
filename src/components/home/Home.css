@@ -75,9 +75,7 @@ button:hover {
   padding: 20px;
     align-items: center;
     justify-content: space-between;
-    margin-top: 120px;
-    hight: 100px;
-    
+    margin-top: 120px;   
 }
    
 .login-form input {

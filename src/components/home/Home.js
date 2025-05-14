@@ -3,12 +3,33 @@ import './Home.css';
 import Main from '../homeBody/Main';
 import { useState } from 'react';
 import Footer from '../footer/Footer';
-
-
-
+import User from '../databaseConn/User';
 
 
 const LoginPage = ({ count, setCount }) => {
+    const [username, setUsername] = useState('');
+    const [password, setPassword] = useState('');
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        // Handle login logic here
+        console.log('Username:', username);
+        console.log('Password:', password);
+        // Reset form fields
+        setUsername('');
+        setPassword('');
+    }
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        if (name === 'username') {
+            setUsername(value);
+        } else if (name === 'password') {
+            setPassword(value);
+        }
+    }
+    const handleClick = () => {
+        // Handle button click logic here
+        console.log('Button clicked!');
+    }
     return (
         <div className='login-form'>
             <div>
