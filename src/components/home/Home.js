@@ -3,7 +3,7 @@ import './Home.css';
 import Main from '../homeBody/Main';
 import { useState } from 'react';
 import Footer from '../footer/Footer';
-import User from '../databaseConn/User';
+
 
 
 const LoginPage = ({ count, setCount }) => {
