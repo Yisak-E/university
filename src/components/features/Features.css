@@ -1,0 +1,22 @@
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.features h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+ .feature {
+    background-color: aquamarine;
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.features .feature p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
